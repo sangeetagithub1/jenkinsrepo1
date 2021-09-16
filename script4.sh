@@ -1,1 +1,1 @@
-echo "hello change1"
+echo "hello change1" > /tmp/reports
