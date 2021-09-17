@@ -1,0 +1,16 @@
+- hosts: web
+  user: root
+  tasks:
+   - name: create directory
+     file:
+       path: /tmp/data
+       state: directory
+   - name: copy file
+     copy:
+      content: "hello world"
+      dest: /tmp/data/sangu.txt
+   - name: install samba
+     yum:
+      name: samba
+      state: installed
+       
