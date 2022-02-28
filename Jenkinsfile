@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version;date > /tmp/data1'
-                sh 'lscpu;uptime > /tmp/data1'
+                sh 'sudo lscpu;uptime > /tmp/data1'
             }
         }
     }
