@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version;date' > /tmp/data1
-                sh 'uptime' >> /tmp/data1
+                sh 'python --version;date'
+                sh 'uptime;lscpu' 
             }
         }
     }
